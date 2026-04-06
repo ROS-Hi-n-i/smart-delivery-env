@@ -1,14 +1,15 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "smart-delivery-env"
+name = "smart_delivery_env"
 version = "0.1.0"
-description = "OpenEnv smart delivery environment"
-authors = [
-    { name = "Roshini" }
-]
+description = "OpenEnv delivery environment"
+authors = [{name="Roshini"}]
+readme = "README.md"
+requires-python = ">=3.8"
+
 dependencies = [
     "fastapi",
     "uvicorn",
@@ -16,5 +17,5 @@ dependencies = [
     "openai"
 ]
 
-[tool.setuptools.packages.find]
-where = ["."]
+[tool.setuptools]
+packages = ["env", "tasks", "baseline"]
