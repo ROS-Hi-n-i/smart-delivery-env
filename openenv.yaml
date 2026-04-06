@@ -1,0 +1,17 @@
+name: smart-delivery-optimizer
+description: Real-world delivery optimization environment
+
+actions:
+  - move_A
+  - move_B
+  - move_C
+  - pick
+  - deliver
+
+observation:
+  type: EnvironmentState
+
+tasks:
+  - easy
+  - medium
+  - hard
