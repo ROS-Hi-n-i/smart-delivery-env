@@ -1,0 +1,14 @@
+[project]
+name = "smart-delivery-env"
+version = "0.1.0"
+description = "OpenEnv smart delivery environment"
+authors = [{name = "Roshini"}]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "openai"
+]
+
+[tool.setuptools]
+packages = ["env", "tasks", "baseline"]
